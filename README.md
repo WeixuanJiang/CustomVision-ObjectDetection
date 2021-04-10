@@ -27,26 +27,26 @@ Step 6. Run pip install -r requirements.txt
 
 Step 7. After all dependencies installed, you need to run python file via command line. 
 Please see below syntax for command and its parameters.
+'''     
+        python predict_on_video.py --input_path <your video path> --output_path <video output path> 
+        --image_size <your desired image size, default is 768> --iou_threshold<float> 
+        –-pro_threshold<float>
 
-python predict_on_video.py --input_path <your video path> --output_path <video output path> 
---image_size <your desired image size, default is 768> --iou_threshold<float> 
-–-pro_threshold<float>
+        Parameters:
+        --input_path: file path to your video.
+        (default: ./video/video2.mp4)
 
-Parameters:
---input_path: file path to your video.
-(default: ./video/video2.mp4)
+        --output_path: file path to save your video when prediction finished. default(./output/videos/output_video_{$ui}.mp4)
 
---output_path: file path to save your video when prediction finished. default(./output/videos/output_video_{$ui}.mp4)
+        --image_size:size for each frame from video to be predicted from model, as well as for the output video.
+        (default: 768)
 
---image_size:size for each frame from video to be predicted from model, as well as for the output video.
-(default: 768)
+        --iou_threshold: overlap between the predicted object bounding box. 
+        (default: 0.3)
 
---iou_threshold: overlap between the predicted object bounding box. 
-(default: 0.3)
-
---pro_threshold: level of confidence that a prediction needs to have in order to be considered correct.
-(default: 0.3)
-
+        --pro_threshold: level of confidence that a prediction needs to have in order to be considered correct.
+        (default: 0.3)
+'''
 e.g:
 
         python predict_on_video.py --input_path ./video/video4.mp4 --output_path ./output/videos/draft_video_3030_v4_iter13.mp4
