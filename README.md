@@ -23,9 +23,9 @@ For example, No Viz Vest Detected, No Safety Hat Detected and No Eye-Protection 
 be showing red for the bounding boxes, label, and probability on the video. Other class labels will be showing in green.  
 ![Screenshot](./img/Picture1.png)
 
-Step 6. 
+Step 6. Install dependencies
 
-        Run pip install -r requirements.txt
+         pip install -r requirements.txt
 
 Step 7. After all dependencies installed, you need to run python file via command line. 
 Please see below syntax for command and its parameters.
