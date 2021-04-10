@@ -23,11 +23,14 @@ For example, No Viz Vest Detected, No Safety Hat Detected and No Eye-Protection 
 be showing red for the bounding boxes, label, and probability on the video. Other class labels will be showing in green.  
 ![Screenshot](./img/Picture1.png)
 
-Step 6. Run pip install -r requirements.txt
+Step 6. 
+
+        Run pip install -r requirements.txt
 
 Step 7. After all dependencies installed, you need to run python file via command line. 
 Please see below syntax for command and its parameters.
-'''     
+
+
         python predict_on_video.py --input_path <your video path> --output_path <video output path> 
         --image_size <your desired image size, default is 768> --iou_threshold<float> 
         –-pro_threshold<float>
@@ -46,7 +49,8 @@ Please see below syntax for command and its parameters.
 
         --pro_threshold: level of confidence that a prediction needs to have in order to be considered correct.
         (default: 0.3)
-'''
+
+
 e.g:
 
         python predict_on_video.py --input_path ./video/video4.mp4 --output_path ./output/videos/draft_video_3030_v4_iter13.mp4
