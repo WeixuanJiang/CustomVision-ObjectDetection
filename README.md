@@ -9,31 +9,23 @@ You will learn how to use trained model to run prediction on video with OpenCV.
 The trained model is downloaded from Custom Vision webpage in a docker format, 
 and bounding boxes will be draw on each frame of a video and saved to a .mp4 format. 
 
-Step 1.In the Custom Vision webpage, go to <b>Performance</b> tag on the top
+Step 1. In the Custom Vision webpage, go to <b>Performance</b> tag on the top
 
-Step 2.Click the <b>Export</b> and choose the Dockerfile with either Linux or Windows platform
+Step 2. Click the <b>Export</b> and choose the Dockerfile with either Linux or Windows platform
 
-Step 3.Click <b>Export</b>, and when its ready click <b>Download</b>.
+Step 3. Click <b>Export</b>, and when its ready click <b>Download</b>.
 
-Step 4.Extract the zip file that downloaded from Custom Vision and go to app folder, 
+Step 4. Extract the zip file that downloaded from Custom Vision and go to app folder, 
 copy <b>model.pb</b> and <b>labels.txt</b> to replace existing files
 
-Step 5.There are three folders: 
-
-train: folder to save images converted from video.
-
-output: folder to save predicted videos or images from OpenCV and object detection model.
-
-video: folder for input video to feed into OpenCV and object detection model.
-
-Step 7.Go to predict_on_video.py, on the line 56 you could put class labels here to customize their color.
+Step 5. Go to predict_on_video.py, on the line 56 you could put class labels here to customize their color.
 For example, No Viz Vest Detected, No Safety Hat Detected and No Eye-Protection Detected will 
 be showing red for the bounding boxes, label, and probability on the video. Other class labels will be showing in green.  
 ![Screenshot](./img/Picture1.png)
 
-Step 8.run pip install -r requirements.txt
+Step 6. Run pip install -r requirements.txt
 
-Step 9.After all dependencies installed, you need to run python file via command line. 
+Step 7. After all dependencies installed, you need to run python file via command line. 
 Please see below syntax for command and its parameters.
 
 python predict_on_video.py --input_path <your video path> --output_path <video output path> 
