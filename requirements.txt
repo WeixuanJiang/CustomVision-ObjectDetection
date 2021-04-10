@@ -1,0 +1,7 @@
+opencv-python
+pillow
+numpy
+pandas
+urllib3
+tensorflow
+tensorflow-gpu
