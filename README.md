@@ -54,6 +54,7 @@ e.g:
         
 If successful you will see following output and a video will show up to display.   
 ![Screenshot](./img/Picture2.png)
+![Screenshot](./img/Picture3.png)
 
 
 
