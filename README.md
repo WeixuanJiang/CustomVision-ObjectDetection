@@ -16,7 +16,7 @@ Step 2. Click the <b>Export</b> and choose the Dockerfile with either Linux or W
 Step 3. Click <b>Export</b>, and when its ready click <b>Download</b>.
 
 Step 4. Extract the zip file that downloaded from Custom Vision and go to app folder, 
-copy <b>model.pb</b> and <b>labels.txt</b> to replace existing files
+copy <b>model.pb</b> and <b>labels.txt</b> to current folder
 
 Step 5. Go to predict_on_video.py, on the line 56 you could put class labels here to customize their color.
 For example, No Viz Vest Detected, No Safety Hat Detected and No Eye-Protection Detected will 
